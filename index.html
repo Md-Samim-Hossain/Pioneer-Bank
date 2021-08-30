@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneer Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+    <div class="login-page" id="login-page">
+        <h1 class="text-center mt-5">Welcome to <span class="text-danger">P</span>ioneer <span class="text-success">B</span>ank</h1>
+        <div class="login-box shadow-lg p-3 mb-5 bg-body rounded m-5 p-5">
+            <h1 class="text-center">Lo<span class="text-danger">g</span>in</h1><br>
+            <input type="email" class="form-control" placeholder="Email..."><br>
+            <input type="password" class="form-control" placeholder="Password..."><br>
+            <button type="submit" class="btn btn-outline-success" id="submit">Submit</button>
+        </div>
+    </div>
+    <div class="transaction-page" id="transaction-page">
+        <div class="counting-balance">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="items bg-warning p-4 m-5 rounded shadow-lg">
+                        <h1 class="text-white">Deposit</h1>
+                        <h2 class="text-white">$ <span id="deposit-balance">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="items bg-primary p-4 m-5 rounded shadow-lg">
+                        <h1 class="text-white">Withdraw</h1>
+                        <h2 class="text-white">$ <span id="withdraw-balance">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="items bg-danger p-4 m-5 rounded shadow-lg">
+                        <h1 class="text-white">Balance</h1>
+                        <h2 class="text-white">$ <span id="main-balance">1240</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="deposit-box shadow p-3 mb-5 bg-body rounded p-5 m-5 alert alert-primary">
+                        <h1>Deposit</h1><br>
+                        <input type="text" class="form-control" id="deposit-amount"
+                            placeholder="$amount of deposite number..."><br>
+                        <button class="btn btn-success" id="deposit-btn">Deposit</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="withdraw-box shadow p-3 mb-5 bg-body rounded p-5 m-5 alert alert-danger">
+                        <h1>withdraw</h1><br>
+                        <input type="text" class="form-control" id="withdraw-amount"
+                            placeholder="$amount of withdraw number..."><br>
+                        <button class="btn btn-success" id="withdraw-btn">withdraw</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
